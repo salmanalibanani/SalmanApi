@@ -49,6 +49,12 @@ namespace SalmanApi.Controllers
                 return productList;
         }
 
+        [HttpPost("trolleyTotal")]
+        public decimal TrolleyTotal([FromBody] TrolleyInfo trolleyInfo)
+        {
+            return 0.0M;
+        }
+
         private IList<Product> AddMissingProducts(IList<Product> groupedShopperHistory, IList<Product> productList)
         {
             return 
